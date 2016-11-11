@@ -1,0 +1,71 @@
+/*
+Стили для оформления блоков дополнительных полей в админке
+*/
+.before{
+	display:block;
+}
+
+.extra_field_checkbox .before{
+	display: inherit;
+}
+
+.extra_field_box {
+	float:left;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.extra_field_select2{
+	float: none;
+	height: inherit;
+	clear: both;
+}
+
+.extra_field_file{
+	width: 98%;
+	border: 1px solid #E5E5E5;
+}
+
+.extra_field_textarea_wp_editor{
+	float: none;
+	clear: both;
+}
+
+.clear{
+	float:none;
+	clear:both;
+	margin:0;
+	padding:0;
+}
+
+.inside hr{
+float: none;
+  clear: both;
+}
+
+
+
+.advant_event_image, .reviews_event_image {
+  width: 30%;
+  float: left;
+  margin-top: 34px;
+}
+.advant_event_text, .reviews_event_text {
+  width: 69%;
+  float: right;
+  clear: inherit;
+}
+
+
+
+
+
+
+
+
+
+#advant_event_block_title{
+  font-size: 20px;
+  text-align: center;
+}
+

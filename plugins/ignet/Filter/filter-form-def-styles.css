@@ -1,0 +1,26 @@
+.filter_list_div {
+	float:left;
+	margin: 4px 7px;
+	padding: 5px;
+}
+
+.filter_list_div .filter_list_title{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.filter_list_div .filter_list{
+	margin: 0;
+	padding: 0;
+}
+
+.filter_list_div ul.filter_list li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.filter_number_slider_div{
+	clear:both;
+	float:none;
+}

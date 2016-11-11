@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kama spamblock\n"
+"POT-Creation-Date: 2014-11-06 01:17+0500\n"
+"PO-Revision-Date: 2014-11-06 01:17+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: kama-spamblock.php:83
+msgid "Antispam block your comment!"
+msgstr "Антиспам заблокировал комментарий!"
+
+#: kama-spamblock.php:86
+msgid "Copy this code to the field:"
+msgstr "Скопируйте этот код в поле:"
+
+#: kama-spamblock.php:86
+msgid "and press button:"
+msgstr "и нажмите кнопку:"
+
+#: kama-spamblock.php:88
+msgid "Send comment once again"
+msgstr "Отправить комментарий еще раз"
+
+#: kama-spamblock.php:113
+msgid "Settings"
+msgstr "Настройки"
+
+#: kama-spamblock.php:120
+msgid "Kama Spamblock settings"
+msgstr "Настройки Kama Spamblock"
+
+#: kama-spamblock.php:126
+msgid ""
+"ID attribute of comment form submit button. Default: <code>submit</code>"
+msgstr ""
+"атрибут ID кнопки у формы комментирования. По умолчанию: <code>submit</code>"

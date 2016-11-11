@@ -1,0 +1,13 @@
+#user_photo_label{
+width: 60px;
+height: 50px;
+display: block;
+position: relative;
+cursor: auto;
+}
+
+#upload_image_button{
+margin: 10px 0 0 10px;
+position: absolute;
+cursor: pointer;
+}

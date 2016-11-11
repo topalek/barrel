@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <link href="select2.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="select2.js"></script>
+    <script>
+		( function( $ ) {
+			$(window).load(function() {
+				$('#test').select2({
+					
+					createSearchChoice:function(term, data) {
+						if ($(data).filter(function() { return this.term.localeCompare(term)===0; }).length===0) { 		return {id:term, term:term};
+						} 
+					},        
+					
+					minimumInputLength: 1,
+					placeholder: 'Search',
+					multiple: true,
+					ajax: {
+						url: "http://www.weighttraining.com/sm/search",
+						dataType: 'jsonp',
+						quietMillis: 10,
+						data: function(term, page) {
+							return {
+								types: ["exercise"],
+								limit: -1,
+								term: term
+							};
+						},
+						results: function(data, page ) {
+							return { results: data.results.exercise }
+						}
+					},
+					formatResult: function(exercise) { 
+						return "<div class='select2-user-result'>" + exercise.term + "</div>"; 
+					},
+					formatSelection: function(exercise) { 
+						return exercise.term; 
+					},
+					initSelection : function (element, callback) {
+						var elementText = $(element).attr('data-init-text');
+						callback({"term":elementText});
+					}
+				});
+			})
+		})( jQuery );
+    </script>
+</head>
+<body style="text-align:center">
+<a href="http://ivaynberg.github.io/select2/">Вся документация</a>
+<hr>
+<input type='hidden' value="" data-init-text='Bla bla' name='input' id='test' style="width:300px;"/>
+<hr>
+</body>
